@@ -1,0 +1,115 @@
+:root{
+	--teal:#51ADC4;
+	--purple: #5B7DC2;
+	--pink: #E56EAA;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #F7F8FC;
+	font-family: "Muli", sans-serif;
+}
+
+.blog-card-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*-- Blog Card Css --*/
+.blog-card{
+	width: 300px;
+	height: 500px;
+	margin: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 2px gray;
+	position: relative;
+}
+
+.blog-card:hover{
+	transform: scale(.98);
+	transition: .7s;
+	cursor: pointer;
+}
+
+.card-header img{
+	width: 100%;
+	height: 200px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px; 
+}
+.card-body{
+	padding: 0 20px;
+}
+.btn{
+	border-radius: 30px;
+	margin: 20px 0;
+	height: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn:hover{
+	transform: scale(.98);
+	cursor: pointer;
+}
+
+.btn-teal{
+	background-color: var(--teal);
+	width: 105px;
+}
+.btn-purple{
+	background-color: var(--purple);
+	width: 80px;
+}
+.btn-pink{
+	background-color: var(--pink);
+	width: 70px;
+}
+
+.card-body h1{
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.footer-card{
+	display: flex;
+	align-items: flex-start;
+	position: absolute;
+	bottom: 20px;
+}
+
+.footer-card img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin: 20px 0;
+}
+
+.footer-image-content h1{
+	font-size: 18px;
+	margin: 20px 15px;
+}
+
+.footer-image-content p{
+	font-size: 15px;
+	margin: -20px 15px;
+	color: gray;
+}
+
+@media(max-width: 940px){
+	.blog-card-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+}
+
+}
